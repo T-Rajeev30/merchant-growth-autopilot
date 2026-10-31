@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paytm-blue: #00baf2;
+  --color-paytm-navy: #002970;
+  --color-canvas: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-success: #16a36a;
+
+  /* Keep existing utility classes while moving the existing screens to the
+     light merchant OS palette. */
+  --color-slate-950: #f5f7fa;
+  --color-slate-900: #ffffff;
+  --color-slate-800: #e2e8f0;
+  --color-slate-700: #f1f5f9;
+  --color-slate-600: #64748b;
+  --color-slate-500: #64748b;
+  --color-slate-400: #475569;
+  --color-slate-300: #334155;
+  --color-slate-200: #1e293b;
+  --color-slate-100: #0f172a;
+  --color-blue-600: #00baf2;
+  --color-blue-700: #009dca;
+  --color-blue-500: #00a9dc;
+  --color-blue-400: #007da5;
+  --color-emerald-400: #13844f;
+  --color-emerald-500: #16a36a;
+  --color-amber-400: #9a6700;
+  --color-red-400: #b42318;
+}
+
+:root {
+  color-scheme: light;
+  --background: #f5f7fa;
+  --foreground: #002970;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  margin: 0;
+}
+
+/* Existing screens used white foreground text on dark cards. Preserve their
+   semantic utility classes while providing readable foregrounds on white. */
+.text-white {
+  color: #002970;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: #00baf233;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
